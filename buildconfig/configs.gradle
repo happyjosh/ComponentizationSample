@@ -1,0 +1,22 @@
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    compileSdkVersion = 23
+    buildToolsVersion = "23.0.2"
+    minSdkVersion = 14
+    targetSdkVersion = 23
+    versionName = "1.0"
+    versionCode = 1
+    mainApplicationId = "com.jph.componentization.sample"
+
+    storeFile = '../buildconfig/jphkeystore.jks'
+    storePassword = '123456+'
+    keyAlias = 'jph'
+    keyPassword = '123456+'
+
+    libAppCompatV7 = 'com.android.support:appcompat-v7:23.2.1'
+}
