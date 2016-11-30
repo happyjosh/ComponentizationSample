@@ -3,13 +3,14 @@ package com.jph.componentization.shopping;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.jph.componentization.common.BaseActivity;
 
 /**
  * Created by jph on 2016/11/29.
  */
-public class EnterActivity extends AppCompatActivity {
+public class EnterActivity extends BaseActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
