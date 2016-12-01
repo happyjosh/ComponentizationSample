@@ -1,6 +1,5 @@
 package com.jph.componentization.shopping;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -20,7 +19,7 @@ public class EnterActivity extends BaseActivity {
         findViewById(R.id.enter_btn_jump).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(v.getContext(), ShoppingActivity.class));
+                ShoppingModule.getInstance().openShoppingActivity(v.getContext());
             }
         });
     }
